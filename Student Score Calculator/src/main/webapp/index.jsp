@@ -11,6 +11,7 @@
 
 <title>Student Score Calculator Login</title>
 </head>
+
 <body>
 	<div class="container" style="margin-top: 30px">
 		<div class="col-md-6" style="margin-left: 300px">
