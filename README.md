@@ -13,3 +13,16 @@ Password: 12345<br />
 
 # Popup
 ![alt text](https://i.ibb.co/mqWDstM/Screen3.png)
+
+# Project Structure
+src
+ - main
+  - java
+   - models
+   - servlets
+  - webapp
+   - META-INF
+   - WEB-INF
+   - scripts
+   - styles
+
