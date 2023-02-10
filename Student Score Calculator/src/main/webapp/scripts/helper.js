@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	$('[data-bs-toggle=popover]').popover();
+	
 	$("#scoreTable").each(function() {
 		var prevTD = null;
 		var prevMarkTD = null;
@@ -51,4 +53,7 @@ $(document).ready(function() {
 	function calculatePassingRate(studentPassed, numOfStudents) {
 		return ((studentPassed / numOfStudents) * 100).toFixed(2).replace(/[.,]0+$/, "");
 	}
+
+
+
 });
