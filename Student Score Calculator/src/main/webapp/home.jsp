@@ -23,7 +23,7 @@
 <body>
 	<div class="container" style="margin-top: 50px">
 		<div class="col-md-6" style="margin-left: 300px">
-			<h3>Welcome User!</h3>
+			<h3>Welcome ${user}!</h3>
 			<br>
 			<table class="table table-dark table-striped" id="scoreTable"
 				border="1">
@@ -43,12 +43,9 @@
 									<span class="popuptext" id="myPopup">${student.studentName}</span>
 									<a href="#" id="studentId">${student.studentId}</a>
 								</div></td>-->
-							<td><a href="#" id="pop" 
-								data-trigger="focus"
-								data-content="${student.studentName}"
-								data-html="true"
-								data-bs-toggle="popover" 
-								class="btn btn-secondary popover-test">${student.studentId}</a>
+							<td><a href="#" id="pop" data-trigger="focus"
+								data-content="${student.studentName}" data-html="true"
+								data-bs-toggle="popover" class="btn btn-secondary popover-test">${student.studentId}</a>
 
 							</td>
 							<td>${student.mark}</td>

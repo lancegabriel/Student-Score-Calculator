@@ -35,9 +35,11 @@ public class HomeServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-
+		String username = (String) request.getSession().getAttribute("userId");
+		System.out.println(username);
 		List<Student> studentList = generateStudents();
 		request.setAttribute("studentList", studentList);
+		request.setAttribute("user", username);
 		request.getRequestDispatcher("/home.jsp").forward(request, response);
 
 		// response.getWriter().append("Served at: ").append(request.getContextPath());
@@ -67,6 +69,5 @@ public class HomeServlet extends HttpServlet {
 
 		return studentList;
 	}
-
 
 }
